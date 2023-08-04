@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBackground()
+        setBackgroundColor()
         
         //Pass Data 3. 전달 받은 값을 뷰에 표현
         contentsLabel.text = contents

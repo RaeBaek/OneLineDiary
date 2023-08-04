@@ -21,6 +21,7 @@
 		1448EF5E2A77796F009BAC7F /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EF5D2A77796F009BAC7F /* SearchCollectionViewController.swift */; };
 		1448EF612A777AE2009BAC7F /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EF5F2A777AE2009BAC7F /* SearchCollectionViewCell.swift */; };
 		1448EF622A777AE2009BAC7F /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1448EF602A777AE2009BAC7F /* SearchCollectionViewCell.xib */; };
+		1477D4772A7B72C80021D932 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D4762A7B72C80021D932 /* LottoViewController.swift */; };
 		1484AEF32A79F2450047E174 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484AEF22A79F2450047E174 /* TimeLineViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		1448EF5D2A77796F009BAC7F /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		1448EF5F2A777AE2009BAC7F /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		1448EF602A777AE2009BAC7F /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		1477D4762A7B72C80021D932 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		1484AEF22A79F2450047E174 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +83,6 @@
 				1448EF562A773BC3009BAC7F /* View */,
 				1448EF572A773BCB009BAC7F /* Controller */,
 				1448EF412A773A8B009BAC7F /* Main.storyboard */,
-				1484AEF22A79F2450047E174 /* TimeLineViewController.swift */,
 				1448EF462A773A8D009BAC7F /* LaunchScreen.storyboard */,
 				1448EF492A773A8D009BAC7F /* Info.plist */,
 			);
@@ -105,9 +106,11 @@
 		1448EF572A773BCB009BAC7F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1484AEF22A79F2450047E174 /* TimeLineViewController.swift */,
+				1448EF3F2A773A8B009BAC7F /* AddViewController.swift */,
+				1477D4762A7B72C80021D932 /* LottoViewController.swift */,
 				14AF56A02A789824009A7D06 /* TableView */,
 				14AF56A12A789835009A7D06 /* CollectionView */,
-				1448EF3F2A773A8B009BAC7F /* AddViewController.swift */,
 				1448EF442A773A8D009BAC7F /* Assets.xcassets */,
 			);
 			path = Controller;
@@ -125,9 +128,9 @@
 		14AF56A02A789824009A7D06 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				1448EF582A773BDD009BAC7F /* Cell */,
 				1448EF4F2A773AEE009BAC7F /* DiaryTableViewController.swift */,
 				1448EF592A7752A2009BAC7F /* DetailViewController.swift */,
+				1448EF582A773BDD009BAC7F /* Cell */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -135,8 +138,8 @@
 		14AF56A12A789835009A7D06 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				14AF56A22A789848009A7D06 /* Cell */,
 				1448EF5D2A77796F009BAC7F /* SearchCollectionViewController.swift */,
+				14AF56A22A789848009A7D06 /* Cell */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				1448EF5A2A7752A2009BAC7F /* DetailViewController.swift in Sources */,
 				1448EF3C2A773A8B009BAC7F /* AppDelegate.swift in Sources */,
 				1448EF3E2A773A8B009BAC7F /* SceneDelegate.swift in Sources */,
+				1477D4772A7B72C80021D932 /* LottoViewController.swift in Sources */,
 				1448EF612A777AE2009BAC7F /* SearchCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,16 +16,16 @@ class DiaryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setBackground()
+        setBackgroundColor()
      
         // XIB로 테이블뷰 셀을 생성할 경우, 테이블뷰에 셀을 등록해주는 과정이 필요!
         let nib = UINib(nibName: DiaryTableViewCell.identifier, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: DiaryTableViewCell.identifier)
         
+//        tableView.backgroundColor = .clear
+        
         //Dynamic Height: 1. automaticDimension, 2. label numberOfLines, 3. AutoLayout(여백)
         tableView.rowHeight = UITableView.automaticDimension
-        
-//        tableView.backgroundColor = .clear
         
     }
     
@@ -45,9 +45,12 @@ class DiaryTableViewController: UITableViewController {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         
         // 2. 스토리보드 파일 내 뷰컨트롤러 찾기
-        guard let vc = sb.instantiateViewController(withIdentifier: "AddViewController") as? AddViewController else {
+        guard let vc = sb.instantiateViewController(withIdentifier: AddViewController.identifier) as? AddViewController else {
             return
         }
+        
+        vc.type = .add
+        vc.contents = ""
         
         // 2-1(옵션). 네비게이션 컨트롤러가 있는 형태(제목바)로 Present 하고 싶은 경우
         //nav를 사용한다면, present와 화면 전환 방식도 nav로 수정 해주어야 한다.
@@ -96,11 +99,12 @@ class DiaryTableViewController: UITableViewController {
         
         // DetailViewController(UIViewController) 생성해서 present 해보기!
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        guard let vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+        guard let vc = sb.instantiateViewController(withIdentifier: AddViewController.identifier) as? AddViewController else {
             return
         }
         
         // Pass Data 2. vc가 가지고 있는 프로퍼티에 데이터 추가!
+        vc.type = .edit
         vc.contents = list[indexPath.row]
         // 값 전달 시 Outlet을 활용할 수는 없음..
 //        vc.contentsLabel.text = list[indexPath.row]
