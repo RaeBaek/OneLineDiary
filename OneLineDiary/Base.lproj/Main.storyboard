@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7J-hV-Raf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UqO-bx-4Ct">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -290,22 +291,179 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y46-WB-PzH">
+                                <rect key="frame" x="129" y="159" width="135.33333333333337" height="232.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="첫 번째 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2d-XV-iOD">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="두 번째 당첨번호 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="li1-eA-SS9">
+                                        <rect key="frame" x="0.0" y="35.333333333333343" width="135.33333333333334" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세번 째 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zt-hR-7Da">
+                                        <rect key="frame" x="0.0" y="70.666666666666657" width="135.33333333333334" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="네번 째 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-TK-t8v">
+                                        <rect key="frame" x="0.0" y="106" width="135.33333333333334" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다섯 번째 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-Dh-n4M">
+                                        <rect key="frame" x="0.0" y="141.33333333333331" width="135.33333333333334" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여섯 번째 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0Z-KM-NLe">
+                                        <rect key="frame" x="0.0" y="176.66666666666669" width="135.33333333333334" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보너스 당첨번호: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-z9-tKY">
+                                        <rect key="frame" x="0.0" y="212" width="135.33333333333334" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAC-co-kc0">
+                                <rect key="frame" x="16" y="129" width="29.666666666666671" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Jn-Wg-dkt">
+                                <rect key="frame" x="347.33333333333331" y="129" width="29.666666666666686" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GRg-eR-nxX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UAC-co-kc0" firstAttribute="leading" secondItem="GRg-eR-nxX" secondAttribute="leading" constant="16" id="1Vs-es-1RQ"/>
+                            <constraint firstItem="y46-WB-PzH" firstAttribute="top" secondItem="JYY-Cm-G0J" secondAttribute="bottom" constant="50" id="3gY-yT-W1e"/>
+                            <constraint firstItem="y46-WB-PzH" firstAttribute="centerX" secondItem="AaT-hd-biX" secondAttribute="centerX" id="6xN-vh-SLu"/>
+                            <constraint firstItem="0Jn-Wg-dkt" firstAttribute="top" secondItem="JYY-Cm-G0J" secondAttribute="bottom" constant="20" id="7uL-09-Etk"/>
+                            <constraint firstItem="UAC-co-kc0" firstAttribute="top" secondItem="JYY-Cm-G0J" secondAttribute="bottom" constant="20" id="Bgt-NM-Uff"/>
+                            <constraint firstItem="GRg-eR-nxX" firstAttribute="trailing" secondItem="0Jn-Wg-dkt" secondAttribute="trailing" constant="16" id="GEy-GU-w2H"/>
                             <constraint firstItem="JYY-Cm-G0J" firstAttribute="top" secondItem="GRg-eR-nxX" secondAttribute="top" constant="16" id="Szn-zs-fqp"/>
                             <constraint firstItem="JYY-Cm-G0J" firstAttribute="leading" secondItem="GRg-eR-nxX" secondAttribute="leading" constant="16" id="WzH-jz-TqK"/>
                             <constraint firstItem="GRg-eR-nxX" firstAttribute="trailing" secondItem="JYY-Cm-G0J" secondAttribute="trailing" constant="16" id="u0j-fm-wV2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bounsNumberLabel" destination="LzI-z9-tKY" id="BwB-oi-IYb"/>
+                        <outlet property="dateLabel" destination="0Jn-Wg-dkt" id="dou-bQ-ied"/>
+                        <outlet property="fifthNumberLabel" destination="gmT-Dh-n4M" id="fZx-lG-pXI"/>
+                        <outlet property="firstNumberLabel" destination="F2d-XV-iOD" id="xay-rF-bDJ"/>
+                        <outlet property="fourthNumberLabel" destination="qbo-TK-t8v" id="zZT-Ps-gF8"/>
                         <outlet property="numberTextField" destination="JYY-Cm-G0J" id="tX6-2x-LFm"/>
+                        <outlet property="secondNumberLabel" destination="li1-eA-SS9" id="H1m-Wa-eAX"/>
+                        <outlet property="sixthNumberLabel" destination="N0Z-KM-NLe" id="ZkV-C9-rJ5"/>
+                        <outlet property="thirdNumberLabel" destination="2Zt-hR-7Da" id="5XF-bO-P9z"/>
+                        <outlet property="timesLabel" destination="UAC-co-kc0" id="Wen-ZR-rND"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aF9-S6-Htp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2883" y="670"/>
+        </scene>
+        <!--Beer View Controller-->
+        <scene sceneID="Zcc-vK-0av">
+            <objects>
+                <viewController id="UqO-bx-4Ct" customClass="BeerViewController" customModule="OneLineDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWt-cW-EUy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랜덤 맥주 이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGn-YS-Jlb">
+                                <rect key="frame" x="148" y="349.66666666666669" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q1H-zF-eGr">
+                                <rect key="frame" x="98.333333333333329" y="133" width="196.33333333333337" height="196.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q1H-zF-eGr" secondAttribute="height" multiplier="1:1" id="9ms-dH-yRH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맥주 종류" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUT-AD-DXl">
+                                <rect key="frame" x="165" y="380.66666666666669" width="63.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맥주 상세 설명" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccY-Jh-kRR">
+                                <rect key="frame" x="39.333333333333343" y="411.66666666666669" width="314.33333333333326" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘은 이 맥주를 추천합니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elE-Fy-y13">
+                                <rect key="frame" x="16" y="79" width="361" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVI-u9-m4F">
+                                <rect key="frame" x="120" y="633" width="153" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="다른 맥주 추천받기" imagePadding="10">
+                                    <imageReference key="image" image="message.fill" catalog="system" symbolScale="medium"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomButtonClicked:" destination="UqO-bx-4Ct" eventType="touchUpInside" id="S3u-Va-4dd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dHX-ii-w2R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q1H-zF-eGr" firstAttribute="centerX" secondItem="qWt-cW-EUy" secondAttribute="centerX" id="1C4-dR-mQU"/>
+                            <constraint firstItem="ccY-Jh-kRR" firstAttribute="centerX" secondItem="qWt-cW-EUy" secondAttribute="centerX" id="1Lo-mr-lyz"/>
+                            <constraint firstItem="dHX-ii-w2R" firstAttribute="trailing" secondItem="elE-Fy-y13" secondAttribute="trailing" constant="16" id="6PS-OO-ROg"/>
+                            <constraint firstItem="oGn-YS-Jlb" firstAttribute="top" secondItem="Q1H-zF-eGr" secondAttribute="bottom" constant="20" id="7F5-Rh-P9z"/>
+                            <constraint firstItem="dHX-ii-w2R" firstAttribute="bottom" secondItem="SVI-u9-m4F" secondAttribute="bottom" constant="150" id="7bt-Sc-rsy"/>
+                            <constraint firstItem="Q1H-zF-eGr" firstAttribute="top" secondItem="elE-Fy-y13" secondAttribute="bottom" constant="30" id="CRa-GV-JQd"/>
+                            <constraint firstItem="Q1H-zF-eGr" firstAttribute="width" secondItem="qWt-cW-EUy" secondAttribute="width" multiplier="0.5" id="KUY-xW-Jhu"/>
+                            <constraint firstItem="oGn-YS-Jlb" firstAttribute="centerX" secondItem="qWt-cW-EUy" secondAttribute="centerX" id="NTU-Me-t1C"/>
+                            <constraint firstItem="JUT-AD-DXl" firstAttribute="top" secondItem="oGn-YS-Jlb" secondAttribute="bottom" constant="10" id="Thn-mK-8o2"/>
+                            <constraint firstItem="ccY-Jh-kRR" firstAttribute="width" secondItem="qWt-cW-EUy" secondAttribute="width" multiplier="0.8" id="rHM-e0-2jv"/>
+                            <constraint firstItem="JUT-AD-DXl" firstAttribute="centerX" secondItem="qWt-cW-EUy" secondAttribute="centerX" id="uNN-2k-X6U"/>
+                            <constraint firstItem="elE-Fy-y13" firstAttribute="top" secondItem="dHX-ii-w2R" secondAttribute="top" constant="20" id="vCO-DY-JQq"/>
+                            <constraint firstItem="ccY-Jh-kRR" firstAttribute="top" secondItem="JUT-AD-DXl" secondAttribute="bottom" constant="10" id="wXU-Oz-O8E"/>
+                            <constraint firstItem="elE-Fy-y13" firstAttribute="leading" secondItem="dHX-ii-w2R" secondAttribute="leading" constant="16" id="wvE-mc-IGj"/>
+                            <constraint firstItem="SVI-u9-m4F" firstAttribute="centerX" secondItem="qWt-cW-EUy" secondAttribute="centerX" id="z5p-yw-HSP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beerDetailInfo" destination="ccY-Jh-kRR" id="Occ-OH-Pwh"/>
+                        <outlet property="beerImage" destination="Q1H-zF-eGr" id="QEx-fd-cR9"/>
+                        <outlet property="beerKind" destination="JUT-AD-DXl" id="2rL-T8-KS4"/>
+                        <outlet property="beerName" destination="oGn-YS-Jlb" id="rqs-LD-aLH"/>
+                        <outlet property="randomBeerButton" destination="SVI-u9-m4F" id="lNe-hi-OKQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4M-7p-cds" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3727" y="670"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nlx-bI-4qa">
@@ -371,6 +529,7 @@
     </scenes>
     <resources>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

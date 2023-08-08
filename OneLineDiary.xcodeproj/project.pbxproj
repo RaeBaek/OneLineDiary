@@ -21,6 +21,9 @@
 		1448EF5E2A77796F009BAC7F /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EF5D2A77796F009BAC7F /* SearchCollectionViewController.swift */; };
 		1448EF612A777AE2009BAC7F /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448EF5F2A777AE2009BAC7F /* SearchCollectionViewCell.swift */; };
 		1448EF622A777AE2009BAC7F /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1448EF602A777AE2009BAC7F /* SearchCollectionViewCell.xib */; };
+		1454B6B82A8202F300B8FD01 /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1454B6B72A8202F300B8FD01 /* BeerViewController.swift */; };
+		1471C9942A80805D0030D091 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1471C9932A80805D0030D091 /* Alamofire */; };
+		1471C9972A8080690030D091 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1471C9962A8080690030D091 /* SwiftyJSON */; };
 		1477D4772A7B72C80021D932 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D4762A7B72C80021D932 /* LottoViewController.swift */; };
 		1484AEF32A79F2450047E174 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484AEF22A79F2450047E174 /* TimeLineViewController.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,7 @@
 		1448EF5D2A77796F009BAC7F /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 		1448EF5F2A777AE2009BAC7F /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
 		1448EF602A777AE2009BAC7F /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		1454B6B72A8202F300B8FD01 /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
 		1477D4762A7B72C80021D932 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		1484AEF22A79F2450047E174 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1471C9972A8080690030D091 /* SwiftyJSON in Frameworks */,
+				1471C9942A80805D0030D091 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +115,7 @@
 				1484AEF22A79F2450047E174 /* TimeLineViewController.swift */,
 				1448EF3F2A773A8B009BAC7F /* AddViewController.swift */,
 				1477D4762A7B72C80021D932 /* LottoViewController.swift */,
+				1454B6B72A8202F300B8FD01 /* BeerViewController.swift */,
 				14AF56A02A789824009A7D06 /* TableView */,
 				14AF56A12A789835009A7D06 /* CollectionView */,
 				1448EF442A773A8D009BAC7F /* Assets.xcassets */,
@@ -169,6 +176,10 @@
 			dependencies = (
 			);
 			name = OneLineDiary;
+			packageProductDependencies = (
+				1471C9932A80805D0030D091 /* Alamofire */,
+				1471C9962A8080690030D091 /* SwiftyJSON */,
+			);
 			productName = OneLineDiary;
 			productReference = 1448EF382A773A8B009BAC7F /* OneLineDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -197,6 +208,10 @@
 				Base,
 			);
 			mainGroup = 1448EF2F2A773A8B009BAC7F;
+			packageReferences = (
+				1471C9922A80805D0030D091 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1471C9952A8080690030D091 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 1448EF392A773A8B009BAC7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +249,7 @@
 				1448EF502A773AEE009BAC7F /* DiaryTableViewController.swift in Sources */,
 				1448EF5A2A7752A2009BAC7F /* DetailViewController.swift in Sources */,
 				1448EF3C2A773A8B009BAC7F /* AppDelegate.swift in Sources */,
+				1454B6B82A8202F300B8FD01 /* BeerViewController.swift in Sources */,
 				1448EF3E2A773A8B009BAC7F /* SceneDelegate.swift in Sources */,
 				1477D4772A7B72C80021D932 /* LottoViewController.swift in Sources */,
 				1448EF612A777AE2009BAC7F /* SearchCollectionViewCell.swift in Sources */,
@@ -454,6 +470,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1471C9922A80805D0030D091 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1471C9952A8080690030D091 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1471C9932A80805D0030D091 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1471C9922A80805D0030D091 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1471C9962A8080690030D091 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1471C9952A8080690030D091 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1448EF302A773A8B009BAC7F /* Project object */;
 }
